@@ -9,8 +9,9 @@ function newImage(src,positionLeft, positionBottom){
     document.body.append(image);
     
     }
+
     
-////////   invoking each image to display //////
+////////   invoking each image to display  images //////
     newImage('assets/pine-tree.png', '450px', '200px');
     newImage('assets/green-character.gif', '100px', '100px');
     newImage('assets/tree.png', '200px', '300px');
@@ -18,7 +19,7 @@ function newImage(src,positionLeft, positionBottom){
     newImage('assets/crate.png', '150px','200px');
     newImage('assets/well.png', '500px', '425px');
 
-/////  funstion for items to be added /////////    
+/////  function for items to be added /////////    
     
     function newItem(src, positionLeft, positionBottom) {
         let item = document.createElement('img');
@@ -26,19 +27,20 @@ function newImage(src,positionLeft, positionBottom){
         item.style.position = 'fixed';
         item.style.left = positionLeft;
         item.style.bottom = positionBottom;
-        document.body.append(item);
-        
+        document.body.append(item);      
 
 ////   double clicking on itmes to make them disappear ////
         item.addEventListener('dblclick', function() {
           item.remove();
         });
       }
-  
+        
+
    ////// invoking each item to be displayed ////      
     
 newItem('assets/sword.png', '500px', '405px');
 newItem('assets/shield.png','165px','100px');
 newItem('assets/staff.png' ,'600px','100px');
 
+/////////// invoking grass and sky items ////////////////
 
